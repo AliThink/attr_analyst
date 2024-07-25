@@ -1,0 +1,27 @@
+[project]
+name = "attr_analyst"
+version = "0.1.7"
+description = "Attributing changes in target metrics to related metrics and calculating the contribution values of the related metrics."
+authors = [
+    {name = "alithink", email = "geekmobiler@gmail.com"},
+]
+dependencies = [
+    "pandas>=2.2.2",
+    "openpyxl>=3.1.5",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=8.3.1",
+]
