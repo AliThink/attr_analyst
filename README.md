@@ -18,17 +18,17 @@ pip install attr_analyst
 ## Example
 
 ### 1. Prepare a json file for relation config.
-```json
-/* test_relation_config_file.json
-
-Attribution target index: amt
+> **test_relation_config_file.json**
+>
+> **Attribution target index**: amt
 The final result of attribution is to attribute the change value of the target index to the contribution of the change in the related index.
-
-Attribution dimension index: store_name, category_name 
+>
+> **Attribution dimension index**: store_name, category_name 
 According to these index values, perform data association between the current DataFrame and the comparative DataFrame to calculate the change value.
+>
+> **Attribution related index**: x1, x2, x3, x4, x5, x6
 
-Attribution related index: x1, x2, x3, x4, x5, x6
-*/
+```json
 {
     "label_column": "amt",
     "dimension_columns": ["store_name", "category_name"],
